@@ -1,5 +1,7 @@
 `sinopia` - a private/caching npm repository server
 
+# This forks aims to merge useful pull requests from original repository which appears to be abandoned (last commit oct 2015).
+
 [![npm version badge](https://img.shields.io/npm/v/sinopia.svg)](https://www.npmjs.org/package/sinopia)
 [![travis badge](http://img.shields.io/travis/rlidwka/sinopia.svg)](https://travis-ci.org/rlidwka/sinopia)
 [![downloads badge](http://img.shields.io/npm/dm/sinopia.svg)](https://www.npmjs.org/package/sinopia)
@@ -138,4 +140,3 @@ If you want to use a database instead, ask for it, we'll come up with some kind 
 - [gemfury](http://www.gemfury.com/l/npm-registry) and others - those are closed-source cloud services, and I'm not in a mood to trust my private code to somebody (security through obscurity yeah!)
 - npm-registry-proxy, npm-delegate, npm-proxy - those are just proxies...
 - Is there something else?
-
