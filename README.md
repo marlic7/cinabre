@@ -2,9 +2,9 @@
 
 ### This forks aims to merge useful pull requests from original sinopia repository which appears to be abandoned (last commit oct 2015).
 
-[![npm version badge](https://img.shields.io/npm/v/cinabre.svg)](https://www.npmjs.org/package/cinabre)
-[![travis badge](http://img.shields.io/travis/soyhuce/cinabre.svg)](https://travis-ci.org/soyhuce/cinabre)
-[![downloads badge](http://img.shields.io/npm/dm/cinabre.svg)](https://www.npmjs.org/package/cinabre)
+<!-- [![npm version badge](https://img.shields.io/npm/v/cinabre.svg)](https://www.npmjs.org/package/cinabre) -->
+[![travis badge](http://img.shields.io/travis/Soyhuce/Cinabre.svg)](https://travis-ci.org/Soyhuce/Cinabre)
+<!-- [![downloads badge](http://img.shields.io/npm/dm/cinabre.svg)](https://www.npmjs.org/package/cinabre) -->
 
 It allows you to have a local npm registry with zero configuration. You don't have to install and replicate an entire CouchDB database. Cinabre keeps its own small database and, if a package doesn't exist there, it asks npmjs.org for it keeping only those packages you use.
 
