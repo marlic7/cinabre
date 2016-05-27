@@ -4,7 +4,7 @@ sinopia-*.tgz
 
 ###
 bin/**
-!bin/sinopia
+!bin/cinabre
 test-storage*
 
 node_modules
