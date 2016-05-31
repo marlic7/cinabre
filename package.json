@@ -31,7 +31,7 @@
     "minimatch": "^3.0.0",
     "mkdirp": "^0.5.1",
     "nocache": "^1.0.0",
-    "readable-stream": "~1.1.0",
+    "readable-stream": "~2.1.4",
     "request": "^2.72.0",
     "semver": "^5.0.0",
     "sinopia-htpasswd": ">= 0.4.3"
