@@ -66,6 +66,7 @@
     "server"
   ],
   "scripts": {
+    "start": "node ./bin/cinabre",
     "test": "eslint . && mocha ./test/functional ./test/unit",
     "test-travis": "eslint . && mocha -R spec ./test/functional ./test/unit",
     "test-only": "mocha ./test/functional ./test/unit",
