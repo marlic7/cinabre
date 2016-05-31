@@ -1,9 +1,9 @@
 language: node_js
 node_js:
+  - 'iojs'
   - '0.10'
   - '4'
   - '5'
-  - 'iojs'
 addons:
   apt:
     sources:
@@ -11,11 +11,13 @@ addons:
     packages:
       - gcc-4.9
       - g++-4.9
-before_install:
-  - export CC="gcc-4.9" CXX="g++-4.9"
+env:
+  - CC=gcc-4.9
+  - CXX=g++-4.9
 sudo: false
 matrix:
   allow_failures:
+    - node_js: '0.10'
     - node_js: 'iojs'
   fast_finish: true
 script: npm install && npm run test-travis
