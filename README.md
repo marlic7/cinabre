@@ -51,7 +51,10 @@ Now you can navigate to [http://localhost:4873/](http://localhost:4873/) where y
 
 ### Docker
 
-A Cinabre docker image [is available](https://registry.hub.docker.com/u/rnbwd/sinopia/)
+```Bash
+docker build -t sinopia .
+docker run -d --name sinopia -p 4873:4873 -v /path/to/sinopia-volume:/opt/sinopia/volume sinopia
+```
 
 ### Chef
 
