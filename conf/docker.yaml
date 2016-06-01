@@ -3,15 +3,15 @@
 # so don't use it on production systems.
 #
 # Look here for more config file examples:
-# https://github.com/rlidwka/sinopia/tree/master/conf
+# https://github.com/soyhuce/cinabre/tree/master/conf
 #
 
 # path to a directory with all packages
-storage: /opt/sinopia/volume/storage
+storage: /opt/cinabre/volume/storage
 
 auth:
   htpasswd:
-    file: /opt/sinopia/volume/htpasswd
+    file: /opt/cinabre/volume/htpasswd
     # Maximum amount of users allowed to register, defaults to "+inf".
     # You can set this to -1 to disable registration.
     #max_users: 1000

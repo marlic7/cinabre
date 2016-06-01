@@ -1,9 +1,9 @@
-FROM node:4.2
-RUN mkdir -p /opt/sinopia && mkdir -p /opt/sinopia/volume
-WORKDIR /opt/sinopia
-ADD package.json /opt/sinopia/
+FROM node:5
+RUN mkdir -p /opt/cinabre && mkdir -p /opt/cinabre/volume
+WORKDIR /opt/cinabre
+ADD package.json /opt/cinabre/
 RUN npm install
-ADD . /opt/sinopia
-CMD ["/opt/sinopia/docker/start.sh"]
+ADD . /opt/cinabre
+CMD ["/opt/cinabre/docker/start.sh"]
 EXPOSE 4873
-VOLUME /opt/sinopia/volume
+VOLUME /opt/cinabre/volume

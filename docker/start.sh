@@ -1,6 +1,6 @@
 #!/bin/bash
-if [ ! -f /opt/sinopia/volume/config.yaml ]; then
-  cp /opt/sinopia/conf/docker.yaml /opt/sinopia/volume/config.yaml
+if [ ! -f /opt/cinabre/volume/config.yaml ]; then
+  cp /opt/cinabre/conf/docker.yaml /opt/cinabre/volume/config.yaml
 fi
-cat /opt/sinopia/volume/config.yaml
-node /opt/sinopia/bin/sinopia --config /opt/sinopia/volume/config.yaml
+cat /opt/cinabre/volume/config.yaml
+node /opt/cinabre/bin/cinabre --config /opt/cinabre/volume/config.yaml
