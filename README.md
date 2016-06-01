@@ -52,8 +52,8 @@ Now you can navigate to [http://localhost:4873/](http://localhost:4873/) where y
 ### Docker
 
 ```Bash
-docker build -t sinopia .
-docker run -d --name sinopia -p 4873:4873 -v /path/to/sinopia-volume:/opt/sinopia/volume sinopia
+docker build -t cinabre .
+docker run -d --name cinabre -p 4873:4873 -v /path/to/cinabre-volume:/opt/cinabre/volume cinabre
 ```
 
 ### Chef
