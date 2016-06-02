@@ -17,7 +17,7 @@ web:
   # this has a lot of issues, e.g. no auth yet, so use at your own risk
   #enable: true
 
-  title: Sinopia
+  title: Cinabre
   # logo: logo.png
   # template: custom.hbs
 
@@ -78,7 +78,7 @@ packages:
 #####################################################################
 
 # if you use nginx with custom path, use this to override links
-#url_prefix: https://dev.company.local/sinopia/
+#url_prefix: https://dev.company.local/cinabre/
 
 # You can specify listen address (or simply a port).
 # If you add multiple values, sinopia will listen on all of them.
@@ -97,6 +97,7 @@ packages:
 #https:
 #  key: path/to/server.key
 #  cert: path/to/server.crt
+#  ca: path/to/ca.crt
 
 # type: file | stdout | stderr
 # level: trace | debug | info | http (default) | warn | error | fatal
@@ -124,4 +125,3 @@ logs:
 # it to be turned off in future versions. If `true`, latest tag is ignored,
 # and the highest semver is placed instead.
 #ignore_latest_tag: false
-

@@ -17,7 +17,7 @@ module.exports.start = function start(dir, conf, cb) {
       return x !== '--debug-brk'
     })
 
-    var f = fork(__dirname + '/../../../bin/sinopia'
+    var f = fork(__dirname + '/../../../bin/cinabre'
               , ['-c', __dirname + '/../' + conf]
               , {silent: !process.env.TRAVIS}
     )
@@ -38,4 +38,3 @@ process.on('exit', function() {
   if (forks[0]) forks[0].kill()
   if (forks[1]) forks[1].kill()
 })
-

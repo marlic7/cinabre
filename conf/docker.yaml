@@ -7,11 +7,11 @@
 #
 
 # path to a directory with all packages
-storage: ./storage
+storage: /opt/cinabre/volume/storage
 
 auth:
   htpasswd:
-    file: ./htpasswd
+    file: /opt/cinabre/volume/htpasswd
     # Maximum amount of users allowed to register, defaults to "+inf".
     # You can set this to -1 to disable registration.
     #max_users: 1000
@@ -46,3 +46,6 @@ packages:
 logs:
   - {type: stdout, format: pretty, level: http}
   #- {type: file, path: sinopia.log, level: info}
+
+listen:
+  - 0.0.0.0:4873

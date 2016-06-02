@@ -1,11 +1,10 @@
 node_modules
-package.json
 npm-debug.log
-sinopia-*.tgz
+cinabre-*.tgz
 
 ###
 bin/**
-!bin/sinopia
+!bin/cinabre
 test-storage*
 
 /.*
