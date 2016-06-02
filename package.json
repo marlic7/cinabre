@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git://github.com/soyhuce/cinabre"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "bin": {
     "cinabre": "./bin/cinabre"
   },
@@ -41,20 +41,24 @@
     "crypt3": "^0.2.0"
   },
   "devDependencies": {
-    "rimraf": "^2.5.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
     "bluebird": "^3.4.0",
-    "mocha": "^2.5.3",
-    "eslint": "2.11.1",
     "browserify": "^13.0.1",
     "browserify-handlebars": "^1.0.0",
+    "eslint": "2.11.1",
+    "eslint-plugin-react": "^5.1.1",
     "grunt": "^1.0.1",
-    "grunt-cli": "*",
     "grunt-browserify": "^5.0.0",
+    "grunt-cli": "*",
     "grunt-contrib-less": "^1.3.0",
     "grunt-contrib-watch": "^1.0.0",
-    "unopinionate": "^0.0.4",
+    "mocha": "^2.5.3",
     "onclick": "^0.1.0",
-    "transition-complete": "^0.0.2"
+    "rimraf": "^2.5.2",
+    "transition-complete": "^0.0.2",
+    "unopinionate": "^0.0.4"
   },
   "keywords": [
     "private",
@@ -67,6 +71,7 @@
   ],
   "scripts": {
     "start": "node ./bin/cinabre",
+    "dev": "babel src -d lib --watch",
     "test": "eslint . && mocha ./test/functional ./test/unit",
     "test-travis": "eslint . && mocha -R spec ./test/functional ./test/unit",
     "test-only": "mocha ./test/functional ./test/unit",

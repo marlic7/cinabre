@@ -1,4 +1,8 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 
-require('../lib/cli')
+if (process.getuid && process.getuid() === 0) {
+  global.console.error('Cinabre doesn\'t need superuser privileges. Don\'t run it under root.');
+}
 
+var cli = require('../lib/cli/index.js');
+cli.run(process.env.NODE_ENV === 'development');

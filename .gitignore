@@ -6,5 +6,6 @@ cinabre-*.tgz
 bin/**
 !bin/cinabre
 test-storage*
+lib
 
 node_modules
